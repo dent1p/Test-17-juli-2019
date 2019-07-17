@@ -18,7 +18,7 @@ class Repository{
         } 
 
     async getBeer(){
-        let getbeer = this.findAll()
+        let getbeer =  await this.findAll()
         console.log(getbeer);
     }
 }
