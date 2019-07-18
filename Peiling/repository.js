@@ -1,29 +1,19 @@
 "use strict"
-let beer = require('./beer');
 
 class Repository{
     constructor(){
         this.beerCollection = [];
     }
 
-    async findall(){
-        for(let beer of this.beerCollection){
-            console.log(beer.name);
-
-        }   
-    }
-
-    save(beer){
-        this.beerCollection.push(beer)
+    save(beer1, beer2, beer3){
+        this.beerCollection.push(beer1, beer2, beer3);
         } 
 
-    async getBeer(){
-        let getbeer =  await this.findAll()
-        console.log(getbeer);
-    }
+    async findall() {
+       return this.beerCollection;
+    }    
+
 }
-
-
 
 
 module.exports = Repository;
