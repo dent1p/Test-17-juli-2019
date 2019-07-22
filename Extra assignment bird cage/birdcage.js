@@ -27,7 +27,8 @@ class BirdRepository{
     }
 
     count(){
-        return this.birdcollection++;
+        let size = 0;
+        return size += this.birdcollection;
     }
 
     findbyColor(color){
