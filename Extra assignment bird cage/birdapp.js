@@ -11,5 +11,5 @@ bird.save(bird1, bird2, bird3);
 
 console.log(bird.findall());
 
-// Ik weet niet of de overige methoden in birdrepository
+// Ik weet niet of de overige methoden in birdrepository goed zijn
 // dus wil dat graag samen met Raymond overleggen
