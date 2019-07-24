@@ -1,7 +1,7 @@
 "use strict"
 
 const Bird = require('./module/bird.js');
-const bird = require('./module/birdcage.js');
+const birdrepo = require('./module/birdcage.js');
 
 let bird1 = new Bird('Mark', 1, 'black');
 let bird2 = new Bird('Jeroen', 2, 'orange');
