@@ -21,9 +21,7 @@ class BirdRepository{
         if (this.birdcollection.id === id){
             return id;
         }
-        else{
             throw new Error(`${id} does not exist in birdcollection`)
-        }
     }
 
     count(){
