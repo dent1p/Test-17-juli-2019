@@ -18,24 +18,26 @@ class BirdRepository{
     }
 
     findById(id){
-        if (this.birdcollection.id === id){
-            return id;
-        }
-            throw new Error(`${id} does not exist in birdcollection`)
+        for (let bird of this.birdcollection) {
+            if (bird.id === id) {
+                return id;
+            }
+        }        
+            throw new Error(`${id} does not exist in birdcollection`);
     }
 
     count(){
-        let size = 0;
-        return size += this.birdcollection;
+        
+        return this.birdcollection.length;
     }
 
     findbyColor(color){
-        for(let bird of this.birdcollection){
-                if (bird.color === color){
-                return color;
+        for (let bird of this.findAll()) {
+            if (bird.color === color){
+               console.log(bird);
             }
         }
-    }   
+    }
 }
 
 const birdrepo = new BirdRepository;

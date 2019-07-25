@@ -16,7 +16,6 @@ class Repository {
 
      findBeerByName(name) {
         for (let beer of this.beerCollection) {
-            console.log(beer.name);
             if (beer.name === name) {
                 return beer;
             }
